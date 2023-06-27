@@ -1,0 +1,35 @@
+{
+  "name": "you.com-browser",
+  "version": "0.0.1",
+  "description": "A You.com based browser",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "build":"electron-builder --win"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.2.0",
+    "electron-builder": "^22.4.1"
+  },
+  "build": {
+    "appId": "com.you.com.browser",
+    "files": [
+      "index.js",
+      "dist/**/*",
+      "node_modules/**/*"
+    ],
+    "mac": {
+      "icon": "build/icon.icns"
+    },
+    "win": {
+      "icon": "build/icon.ico"
+    },
+    "linux": {
+      "icon": "build/icon.png"
+    }
+  }
+}
