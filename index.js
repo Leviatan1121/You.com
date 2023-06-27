@@ -1,6 +1,11 @@
 /*npm install --save-dev electron
 npm install -g electron-builder
-electron-builder --win*/
+electron-builder --win
+
+npm install
+npm start
+npm run build
+*/
 
 const { app, Menu, BrowserWindow } = require('electron')
 const path = require('path')
